@@ -1,5 +1,8 @@
 import streamlit as st
 from fastai.vision.all import *
+import sys
+import fasttransform
+sys.modules['fastcore.transform'] = fasttransform
 
 st.title("Cat vs Dog Classifier")
 st.text("Built by Gamas Chang")
