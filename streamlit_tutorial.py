@@ -3,6 +3,7 @@ from fastai.vision.all import *
 import sys
 import fasttransform
 sys.modules['fastcore.transform'] = fasttransform
+sys.modules['fastcore.dispatch'] = fasttransform
 
 st.title("Cat vs Dog Classifier")
 st.text("Built by Gamas Chang")
