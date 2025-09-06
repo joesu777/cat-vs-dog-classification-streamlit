@@ -1,17 +1,11 @@
 import streamlit as st
 from fastai.vision.all import *
-import sys
-import fasttransform
-sys.modules['fastcore.transform'] = fasttransform
-sys.modules['fastcore.dispatch'] = fasttransform
 
 st.title("Cat vs Dog Classifier")
 st.text("Built by Gamas Chang")
 
 def is_cat(f):
     return f[0].isupper()
-
-
 
 cat_vs_dog_model = load_learner("cat-vs-dog.pkl")
 
